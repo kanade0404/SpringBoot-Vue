@@ -1,5 +1,6 @@
 <template>
     <el-row>
+        <sub-header/>
         <el-col :span="24">
             <el-card class="box-card box-card-wrapper">
                 <div slot="header">
@@ -74,8 +75,10 @@
 
 <script>
 import axios from 'axios'
+import SubHeader from '../components/SubHeader'
 export default {
     name: 'category',
+    components: {SubHeader},
     data() {
         return {
             request: {

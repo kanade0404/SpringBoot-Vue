@@ -1,15 +1,18 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
-  </div>
+  
+  <el-container id="app">
+    <el-header id="nav"><global-header/></el-header>
+    <el-main><router-view></router-view></el-main>
+  </el-container>
 </template>
 
 <script>
+import GlobalHeader from './components/GlobalHeader'
 export default {
   name: 'app',
-  // components: {
-  //   Home
-  // }
+  components: {
+    GlobalHeader
+  }
 }
 </script>
 
